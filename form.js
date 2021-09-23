@@ -1,7 +1,7 @@
 
 /**
  * Función del módulo form.js para validar correo electrónico
- * @param {object} input_correo Objeto tipo input de tipo email
+ * @param {object} input_correo Objeto tipo input para email
  * @returns {boolean} Booleano de validación
  */
 function checkCorreo(input_correo) {
