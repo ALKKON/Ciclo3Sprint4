@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("form-registro").addEventListener('submit', function(e) {
         e.preventDefault();
-        console.log(checkGenero(document.getElementById('masculino'), document.getElementById('femenino')))
+        console.log(checkGenero(document.getElementsByName('genero'), document.getElementById('femenino')))
     });
 });
 
-function checkGenero(masculino, femenino) {
-
-    if (masculino.checked || femenino.checked) {
+function checkGenero(genero) {
+    if (genero[0].checked || genero[1].checked) {
         return true;
     } else {
         return false;
