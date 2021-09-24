@@ -1,13 +1,15 @@
 // Validar formulario de registro
 function checkContrasena (valor){
-    let contrasena_valida = /^[a-zA-Z0-9]{8,50}$/;
+    let contrasena_valida = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W])[\sA-Za-z\d\W]{8,}/;
+
     if (contrasena_valida.test(valor.value) ){
         return true;
     }else{
         return false;
     }
+    
+    
 }
-
 
 module.exports = checkNombre;
 module.exports = checkTelefono;
