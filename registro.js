@@ -6,10 +6,8 @@
 function filtrarCorreo(arreglo) {
     const filtrado = arreglo.filter(
         obj => Object.keys(obj).some(correo => obj[correo].
-            toLowerCase().includes('gmail.com'.toLowerCase()))
+            toLowerCase().includes('@gmail.com'))
     );
     console.info(filtrado);
     return filtrado;
 }
-
-module.exports = {agregarRegistro, ordenarArreglo, filtrarCorreo}
